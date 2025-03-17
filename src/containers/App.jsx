@@ -13,7 +13,7 @@ const App = () => {
 	});
 
 	useEffect(() => {
-		fetch('https:/jsonplaceholder.typicode.com/users')
+		fetch('https://jsonplaceholder.typicode.com/users')
 			.then(response => response.json())
 			.then(users => setRobotsState(users));
 	}, []);
